@@ -3,166 +3,219 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eemsdelta Riool Service | Ontstoppen & Herstellen</title>
-
-<meta name="description" content="Eemsdelta Riool Service - Riool ontstoppen, herstellen en vernieuwen in Delfzijl, Appingedam en omgeving. Snel en betrouwbaar.">
+<title>Eemsdelta Rioolservice</title>
 
 <style>
-body {margin:0;font-family:Arial;background:#f4f6f8;color:#333;}
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
 
-header {
-    background:#0d2b45;
-    color:white;
-    padding:15px 20px;
+body {
+    background:#f4f6f9;
+}
+
+/* NAV */
+.navbar {
     display:flex;
     justify-content:space-between;
     align-items:center;
+    padding:15px 40px;
+    background:#fff;
 }
 
-header a {
-    background:#f26c28;
-    padding:10px 15px;
-    color:white;
+.navbar img {
+    height:50px;
+}
+
+.navbar a {
+    margin-left:20px;
     text-decoration:none;
-    border-radius:6px;
-    font-weight:bold;
+    color:#333;
 }
 
+/* HERO */
 .hero {
-    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-    url('https://images.unsplash.com/photo-1581578731548-c64695cc6952');
-    background-size:cover;
-    background-position:center;
+    display:flex;
+    flex-wrap:wrap;
+    padding:60px 40px;
+    background:#0d2b45;
     color:white;
-    text-align:center;
-    padding:100px 20px;
 }
 
-.hero h1 {font-size:42px;}
-.hero h2 {color:#f26c28;}
+.hero-text {
+    flex:1;
+    min-width:300px;
+}
 
+.hero-text h1 {
+    font-size:42px;
+}
+
+.hero-text span {
+    color:orange;
+}
+
+.hero-text p {
+    margin:20px 0;
+}
+
+.hero img {
+    flex:1;
+    max-width:500px;
+    border-radius:10px;
+}
+
+/* BUTTONS */
 .btn {
-    display:inline-block;
-    margin-top:15px;
-    padding:12px 20px;
-    background:#f26c28;
-    color:white;
+    padding:14px 20px;
     text-decoration:none;
-    border-radius:6px;
     font-weight:bold;
+    border-radius:5px;
+    margin-right:10px;
 }
 
-.section {
-    padding:60px 20px;
+.whatsapp {
+    background:#25D366;
+    color:white;
+}
+
+.offerte {
+    background:white;
+    color:#0d2b45;
+}
+
+/* DIENSTEN */
+.services {
+    padding:50px;
     text-align:center;
 }
 
-.cards {
+.grid {
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:20px;
 }
 
 .card {
     background:white;
+    padding:25px;
+    margin:10px;
     width:280px;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    border-radius:10px;
 }
 
-iframe {
+/* FORM */
+.form-section {
+    padding:50px;
+    background:#fff;
+}
+
+form {
+    max-width:500px;
+    margin:auto;
+}
+
+input, textarea {
     width:100%;
-    max-width:600px;
-    height:700px;
-    border:none;
-    margin-top:20px;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
 }
 
-footer {
+button {
+    padding:14px;
+    background:#0d2b45;
+    color:white;
+    border:none;
+    width:100%;
+    font-size:16px;
+}
+
+/* FOOTER */
+.footer {
     background:#0d2b45;
     color:white;
     text-align:center;
     padding:20px;
-}
-
-/* WhatsApp button */
-.whatsapp {
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:white;
-    padding:15px 18px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    box-shadow:0 5px 10px rgba(0,0,0,0.2);
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<strong>Eemsdelta Riool Service</strong>
-<a href="tel:0681824786">📞 Bel nu</a>
-</header>
+<!-- NAV -->
+<div class="navbar">
+    <img src="logo.png" alt="Logo">
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Diensten</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
 
+<!-- HERO -->
 <section class="hero">
-<h1>Riool verstopt?</h1>
-<h2>Wij lossen het snel op</h2>
-<p>Ontstoppen • Herstellen • Vernieuwen</p>
+    <div class="hero-text">
+        <h1>RIOOL PROBLEMEN?<br><span>WIJ LOSSEN HET OP!</span></h1>
+        <p>Dé specialist in riool ontstoppen, herstellen en vernieuwen in Eemsdelta en omstreken.</p>
 
-<a href="tel:0681824786" class="btn">Bel direct</a>
-<a href="#offerte" class="btn">Offerte aanvragen</a>
+        <a class="btn whatsapp" href="https://wa.me/31681824786" target="_blank">
+            💬 WhatsApp direct
+        </a>
+
+        <a class="btn offerte" href="#offerte">
+            Offerte aanvragen
+        </a>
+    </div>
+
+    <img src="hero.jpg" alt="Werk foto">
 </section>
 
-<section class="section">
-<h2>Onze Diensten</h2>
+<!-- DIENSTEN -->
+<section class="services">
+    <h2>Onze diensten</h2>
 
-<div class="cards">
-<div class="card">
-<h3>Ontstoppen</h3>
-<p>WC, afvoer of riool verstopt? Snel opgelost.</p>
-</div>
+    <div class="grid">
+        <div class="card">
+            <h3>Riool ontstoppen</h3>
+            <p>Snel en effectief verstoppingen oplossen.</p>
+        </div>
 
-<div class="card">
-<h3>Herstellen</h3>
-<p>Lekkages en schade professioneel gerepareerd.</p>
-</div>
+        <div class="card">
+            <h3>Riool herstellen</h3>
+            <p>Reparatie van lekkages en schade.</p>
+        </div>
 
-<div class="card">
-<h3>Vernieuwen</h3>
-<p>Oude leidingen vervangen met duurzame oplossingen.</p>
-</div>
-</div>
+        <div class="card">
+            <h3>Riool vernieuwen</h3>
+            <p>Duurzame vervanging van leidingen.</p>
+        </div>
+    </div>
 </section>
 
-<section class="section" id="offerte">
-<h2>Offerte aanvragen</h2>
-<p>Vul het formulier in en wij nemen snel contact op</p>
+<!-- FORM -->
+<section class="form-section" id="offerte">
+    <h2 style="text-align:center;">Offerte aanvragen</h2>
 
-<!-- GOOGLE FORM HIER -->
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSddSaJBvslHM8SkwW7UpF1z8Fcy-tys1NX74L5fctbJcyjMEg/viewform?usp=sharing&ouid=105123364286243062916"></iframe>
+    <!-- FORM WERKT VIA FORMSPREE -->
+    <form action="https://formspree.io/f/xdkzylpw" method="POST">
+        <input type="text" name="naam" placeholder="Uw naam" required>
+        <input type="email" name="email" placeholder="Uw e-mail" required>
+        <input type="text" name="telefoon" placeholder="Telefoonnummer">
+        <textarea name="bericht" placeholder="Beschrijf uw probleem" required></textarea>
 
+        <button type="submit">Verstuur aanvraag</button>
+    </form>
 </section>
 
-<section class="section">
-<h2>Werkgebied</h2>
-<p>Delfzijl • Appingedam • Loppersum • Bierum • Eenrum</p>
-</section>
-
-<footer>
-<p>© Eemsdelta Riool Service</p>
-<p>📞 06 81 82 47 86</p>
-</footer>
-
-<!-- WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/31681824786" target="_blank">
-💬 WhatsApp
-</a>
+<!-- FOOTER -->
+<div class="footer">
+    <p>📍 Delfzijl, Appingedam en omgeving</p>
+    <p>📧 karelmeuken19@icloud.com</p>
+</div>
 
 </body>
 </html>
