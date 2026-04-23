@@ -5,20 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Eemsdelta Rioolservice</title>
 
-<style>
-* {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial;
-}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
+<style>
 body {
-    background:#f4f6f9;
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background:#f3f5f8;
 }
 
 /* NAV */
-.navbar {
+.nav {
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -26,55 +23,58 @@ body {
     background:#fff;
 }
 
-.navbar img {
-    height:50px;
+.logo {
+    font-size:24px;
+    font-weight:bold;
 }
 
-.navbar a {
+.logo span {
+    color:#ff7a00;
+}
+
+.nav a {
     margin-left:20px;
     text-decoration:none;
     color:#333;
 }
 
+.call {
+    background:#0d2b45;
+    color:white;
+    padding:10px 18px;
+    border-radius:6px;
+}
+
 /* HERO */
 .hero {
     display:flex;
-    flex-wrap:wrap;
-    padding:60px 40px;
+    padding:50px;
     background:#0d2b45;
     color:white;
 }
 
-.hero-text {
-    flex:1;
-    min-width:300px;
-}
+.left { flex:2; }
+.right { flex:1; margin-left:30px; }
 
-.hero-text h1 {
-    font-size:42px;
-}
+h1 { font-size:50px; }
+.orange { color:#ff7a00; }
 
-.hero-text span {
-    color:orange;
-}
-
-.hero-text p {
+/* FEATURES */
+.features {
     margin:20px 0;
 }
-
-.hero img {
-    flex:1;
-    max-width:500px;
-    border-radius:10px;
+.features i {
+    color:#ff7a00;
+    margin-right:5px;
 }
 
 /* BUTTONS */
 .btn {
     padding:14px 20px;
+    border-radius:6px;
     text-decoration:none;
     font-weight:bold;
-    border-radius:5px;
-    margin-right:10px;
+    display:inline-block;
 }
 
 .whatsapp {
@@ -83,63 +83,94 @@ body {
 }
 
 .offerte {
-    background:white;
-    color:#0d2b45;
+    background:#1f4e79;
+    color:white;
+    margin-left:10px;
 }
 
-/* DIENSTEN */
+/* IMAGE */
+.hero img {
+    width:100%;
+    border-radius:12px;
+    margin-top:20px;
+}
+
+/* SIDEBAR */
+.box {
+    background:#122f4a;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.box h3 {
+    border-bottom:1px solid rgba(255,255,255,0.2);
+    padding-bottom:5px;
+}
+
+.box i {
+    color:#ff7a00;
+    margin-right:8px;
+}
+
+/* SERVICES */
 .services {
-    padding:50px;
+    padding:60px;
     text-align:center;
 }
 
 .grid {
     display:flex;
-    flex-wrap:wrap;
     justify-content:center;
+    gap:25px;
 }
 
 .card {
     background:white;
     padding:25px;
-    margin:10px;
+    border-radius:12px;
     width:280px;
-    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* CONTACT BAR */
+.contactbar {
+    background:#0d2b45;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    padding:25px;
+}
+
+/* MAP */
+.map {
+    background:white;
+    padding:30px;
+    text-align:center;
 }
 
 /* FORM */
-.form-section {
-    padding:50px;
+.form {
+    padding:60px;
     background:#fff;
-}
-
-form {
-    max-width:500px;
-    margin:auto;
 }
 
 input, textarea {
     width:100%;
-    padding:12px;
+    padding:14px;
     margin:10px 0;
     border:1px solid #ccc;
+    border-radius:6px;
 }
 
 button {
+    width:100%;
     padding:14px;
     background:#0d2b45;
     color:white;
     border:none;
-    width:100%;
     font-size:16px;
-}
-
-/* FOOTER */
-.footer {
-    background:#0d2b45;
-    color:white;
-    text-align:center;
-    padding:20px;
+    border-radius:6px;
 }
 </style>
 </head>
@@ -147,75 +178,114 @@ button {
 <body>
 
 <!-- NAV -->
-<div class="navbar">
-    <img src="logo.png" alt="Logo">
+<div class="nav">
+    <div class="logo">EEMSDELTA <span>RIOOLSERVICE</span></div>
     <div>
         <a href="#">Home</a>
         <a href="#">Diensten</a>
+        <a href="#">Over ons</a>
         <a href="#">Contact</a>
+        <span class="call">06 81 82 47 86</span>
     </div>
 </div>
 
 <!-- HERO -->
 <section class="hero">
-    <div class="hero-text">
-        <h1>RIOOL PROBLEMEN?<br><span>WIJ LOSSEN HET OP!</span></h1>
-        <p>Dé specialist in riool ontstoppen, herstellen en vernieuwen in Eemsdelta en omstreken.</p>
 
-        <a class="btn whatsapp" href="https://wa.me/31681824786" target="_blank">
-            💬 WhatsApp direct
-        </a>
+<div class="left">
+<h1>RIOOL PROBLEMEN?<br><span class="orange">WIJ LOSSEN HET OP!</span></h1>
 
-        <a class="btn offerte" href="#offerte">
-            Offerte aanvragen
-        </a>
-    </div>
+<p>Dé specialist in riool ontstoppen, herstellen en vernieuwen in Eemsdelta en omstreken.</p>
 
-    <img src="hero.jpg" alt="Werk foto">
+<div class="features">
+<p><i class="fa-solid fa-check"></i> Vakundig</p>
+<p><i class="fa-solid fa-check"></i> Eerlijk & transparant</p>
+<p><i class="fa-solid fa-check"></i> Snel ter plaatse</p>
+</div>
+
+<a class="btn whatsapp" href="https://wa.me/31681824786" target="_blank">
+💬 WhatsApp direct
+</a>
+
+<a class="btn offerte" href="#offerte">
+Offerte aanvragen
+</a>
+
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="">
+</div>
+
+<div class="right">
+
+<div class="box">
+<h3>Onze diensten</h3>
+<p><i class="fa-solid fa-wrench"></i> Riool ontstoppen</p>
+<p><i class="fa-solid fa-wrench"></i> Riool herstellen</p>
+<p><i class="fa-solid fa-wrench"></i> Riool vernieuwen</p>
+</div>
+
+<div class="box">
+<h3>Waarom kiezen?</h3>
+<p><i class="fa-solid fa-check"></i> Snelle service</p>
+<p><i class="fa-solid fa-check"></i> Eerlijke prijzen</p>
+<p><i class="fa-solid fa-check"></i> Netjes & betrouwbaar</p>
+<p><i class="fa-solid fa-check"></i> Ruime ervaring</p>
+</div>
+
+<div class="box">
+<h3>Werkgebied</h3>
+<p>Delfzijl</p>
+<p>Appingedam</p>
+<p>Loppersum</p>
+<p>Bierum</p>
+</div>
+
+</div>
+
 </section>
 
-<!-- DIENSTEN -->
+<!-- SERVICES -->
 <section class="services">
-    <h2>Onze diensten</h2>
+<h2>Onze diensten</h2>
 
-    <div class="grid">
-        <div class="card">
-            <h3>Riool ontstoppen</h3>
-            <p>Snel en effectief verstoppingen oplossen.</p>
-        </div>
+<div class="grid">
+<div class="card">
+<h3>Riool ontstoppen</h3>
+<p>Snel en effectief verstoppingen oplossen.</p>
+</div>
 
-        <div class="card">
-            <h3>Riool herstellen</h3>
-            <p>Reparatie van lekkages en schade.</p>
-        </div>
+<div class="card">
+<h3>Riool herstellen</h3>
+<p>Reparatie van schade en lekkages.</p>
+</div>
 
-        <div class="card">
-            <h3>Riool vernieuwen</h3>
-            <p>Duurzame vervanging van leidingen.</p>
-        </div>
-    </div>
+<div class="card">
+<h3>Riool vernieuwen</h3>
+<p>Duurzame vervanging van leidingen.</p>
+</div>
+</div>
 </section>
+
+<!-- CONTACT -->
+<div class="contactbar">
+<p><i class="fa-solid fa-phone"></i> 06 81 82 47 86</p>
+<p><i class="fa-solid fa-envelope"></i> karelmeuken19@icloud.com</p>
+<p><i class="fa-solid fa-location-dot"></i> Delfzijl en omgeving</p>
+<p><i class="fa-solid fa-clock"></i> Ma - Vr: 07:00 - 17:00</p>
+</div>
 
 <!-- FORM -->
-<section class="form-section" id="offerte">
-    <h2 style="text-align:center;">Offerte aanvragen</h2>
+<section class="form" id="offerte">
+<h2 style="text-align:center;">Offerte aanvragen</h2>
 
-    <!-- FORM WERKT VIA FORMSPREE -->
-    <form action="https://formspree.io/f/xdkzylpw" method="POST">
-        <input type="text" name="naam" placeholder="Uw naam" required>
-        <input type="email" name="email" placeholder="Uw e-mail" required>
-        <input type="text" name="telefoon" placeholder="Telefoonnummer">
-        <textarea name="bericht" placeholder="Beschrijf uw probleem" required></textarea>
+<form action="https://formspree.io/f/xdkzylpw" method="POST">
+<input type="text" name="naam" placeholder="Uw naam" required>
+<input type="email" name="email" placeholder="Uw e-mail" required>
+<input type="text" name="telefoon" placeholder="Telefoonnummer">
+<textarea name="bericht" placeholder="Beschrijf uw probleem"></textarea>
 
-        <button type="submit">Verstuur aanvraag</button>
-    </form>
+<button type="submit">Verstuur aanvraag</button>
+</form>
 </section>
-
-<!-- FOOTER -->
-<div class="footer">
-    <p>📍 Delfzijl, Appingedam en omgeving</p>
-    <p>📧 karelmeuken19@icloud.com</p>
-</div>
 
 </body>
 </html>
