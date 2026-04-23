@@ -3,68 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eemsdelta Riool Service</title>
+<title>Eemsdelta Riool Service | Ontstoppen & Herstellen</title>
+
+<meta name="description" content="Eemsdelta Riool Service - Riool ontstoppen, herstellen en vernieuwen in Delfzijl, Appingedam en omgeving. Snel en betrouwbaar.">
 
 <style>
-body {
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#f5f7fa;
-}
+body {margin:0;font-family:Arial;background:#f4f6f8;color:#333;}
 
-/* TOP BAR */
-.topbar {
+header {
     background:#0d2b45;
     color:white;
+    padding:15px 20px;
     display:flex;
     justify-content:space-between;
-    padding:12px 20px;
     align-items:center;
 }
 
-.topbar a {
+header a {
     background:#f26c28;
-    color:white;
     padding:10px 15px;
-    border-radius:6px;
+    color:white;
     text-decoration:none;
+    border-radius:6px;
     font-weight:bold;
 }
 
-/* HERO */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('https://media.discordapp.net/attachments/1470408805706895390/1496986313218588752/ChatGPT_Image_23_apr_2026_23_11_17.png?ex=69ebe0a5&is=69ea8f25&hm=ad63144c26e6203b689c12d36fc5c9162527669af025b3ae806edf248b2bc759&=&format=webp&quality=lossless&width=1326&height=884');
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1581578731548-c64695cc6952');
     background-size:cover;
     background-position:center;
     color:white;
+    text-align:center;
     padding:100px 20px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    flex-wrap:wrap;
 }
 
-.hero-text {
-    max-width:500px;
-}
+.hero h1 {font-size:42px;}
+.hero h2 {color:#f26c28;}
 
-.hero h1 {
-    font-size:42px;
-    margin-bottom:10px;
-}
-
-.hero h2 {
-    color:#f26c28;
-}
-
-.hero img {
-    width:260px;
-    border-radius:15px;
-    border:3px solid #f26c28;
-}
-
-/* BUTTONS */
 .btn {
     display:inline-block;
     margin-top:15px;
@@ -76,7 +52,6 @@ body {
     font-weight:bold;
 }
 
-/* SERVICES */
 .section {
     padding:60px 20px;
     text-align:center;
@@ -84,20 +59,35 @@ body {
 
 .cards {
     display:flex;
+    flex-wrap:wrap;
     justify-content:center;
     gap:20px;
-    flex-wrap:wrap;
 }
 
 .card {
     background:white;
-    padding:25px;
     width:280px;
+    padding:20px;
     border-radius:12px;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* WHATSAPP BUTTON */
+iframe {
+    width:100%;
+    max-width:600px;
+    height:700px;
+    border:none;
+    margin-top:20px;
+}
+
+footer {
+    background:#0d2b45;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* WhatsApp button */
 .whatsapp {
     position:fixed;
     bottom:20px;
@@ -110,65 +100,58 @@ body {
     font-weight:bold;
     box-shadow:0 5px 10px rgba(0,0,0,0.2);
 }
-
-/* FOOTER */
-footer {
-    background:#0d2b45;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
 </style>
 </head>
 
 <body>
 
-<div class="topbar">
-    <div><strong>Eemsdelta Riool Service</strong></div>
-    <a href="tel:0681824786">📞 Bel nu</a>
-</div>
+<header>
+<strong>Eemsdelta Riool Service</strong>
+<a href="tel:0681824786">📞 Bel nu</a>
+</header>
 
 <section class="hero">
+<h1>Riool verstopt?</h1>
+<h2>Wij lossen het snel op</h2>
+<p>Ontstoppen • Herstellen • Vernieuwen</p>
 
-<div class="hero-text">
-    <h1>Riool verstopt?</h1>
-    <h2>Wij lossen het direct op</h2>
-    <p>Ontstoppen • Herstellen • Vernieuwen in Eemsdelta en omgeving</p>
-
-    <a href="tel:0681824786" class="btn">Bel direct</a>
-</div>
-
-<!-- 👇 HIER JOUW FOTO -->
-<img src="https://media.discordapp.net/attachments/1470408805706895390/1496986313218588752/ChatGPT_Image_23_apr_2026_23_11_17.png?ex=69ebe0a5&is=69ea8f25&hm=ad63144c26e6203b689c12d36fc5c9162527669af025b3ae806edf248b2bc759&=&format=webp&quality=lossless&width=1326&height=884" alt="Riool service medewerker">
-
+<a href="tel:0681824786" class="btn">Bel direct</a>
+<a href="#offerte" class="btn">Offerte aanvragen</a>
 </section>
 
 <section class="section">
 <h2>Onze Diensten</h2>
 
 <div class="cards">
-
 <div class="card">
-<h3>Riool Ontstoppen</h3>
-<p>Snelle oplossing bij verstoppingen in wc, keuken of afvoer.</p>
+<h3>Ontstoppen</h3>
+<p>WC, afvoer of riool verstopt? Snel opgelost.</p>
 </div>
 
 <div class="card">
-<h3>Riool Herstellen</h3>
+<h3>Herstellen</h3>
 <p>Lekkages en schade professioneel gerepareerd.</p>
 </div>
 
 <div class="card">
-<h3>Riool Vernieuwen</h3>
-<p>Oude leidingen vervangen voor duurzame oplossingen.</p>
+<h3>Vernieuwen</h3>
+<p>Oude leidingen vervangen met duurzame oplossingen.</p>
 </div>
+</div>
+</section>
 
-</div>
+<section class="section" id="offerte">
+<h2>Offerte aanvragen</h2>
+<p>Vul het formulier in en wij nemen snel contact op</p>
+
+<!-- GOOGLE FORM HIER -->
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSddSaJBvslHM8SkwW7UpF1z8Fcy-tys1NX74L5fctbJcyjMEg/viewform?usp=sharing&ouid=105123364286243062916"></iframe>
+
 </section>
 
 <section class="section">
 <h2>Werkgebied</h2>
-<p>Delfzijl • Appingedam • Loppersum • Bierum • Eenrum en omgeving</p>
+<p>Delfzijl • Appingedam • Loppersum • Bierum • Eenrum</p>
 </section>
 
 <footer>
@@ -176,7 +159,7 @@ footer {
 <p>📞 06 81 82 47 86</p>
 </footer>
 
-<!-- WHATSAPP BUTTON -->
+<!-- WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/31681824786" target="_blank">
 💬 WhatsApp
 </a>
