@@ -5,16 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Eemsdelta Rioolservice</title>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
 <style>
-html {
-    scroll-behavior:smooth;
-}
+html { scroll-behavior:smooth; }
 
 body {
     margin:0;
-    font-family:'Segoe UI', sans-serif;
+    font-family:Arial;
     background:#f3f5f8;
 }
 
@@ -24,13 +20,13 @@ body {
     justify-content:space-between;
     align-items:center;
     padding:15px 40px;
-    background:#fff;
+    background:white;
     position:sticky;
     top:0;
 }
 
 .logo {
-    font-size:24px;
+    font-size:22px;
     font-weight:bold;
 }
 
@@ -48,78 +44,85 @@ body {
 /* HERO */
 .hero {
     display:flex;
+    flex-wrap:wrap;
     padding:50px;
     background:#0d2b45;
     color:white;
 }
 
-.left { flex:2; }
-.right { flex:1; margin-left:30px; }
+.left {
+    flex:2;
+}
 
-h1 { font-size:48px; }
-.orange { color:#ff7a00; }
+.right {
+    flex:1;
+    margin-left:30px;
+}
 
-/* BUTTONS */
+/* TITLE */
+h1 {
+    font-size:44px;
+}
+
+.orange {
+    color:#ff7a00;
+}
+
+/* BUTTON */
 .btn {
+    display:inline-block;
     padding:14px 20px;
     border-radius:6px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.whatsapp {
     background:#25D366;
     color:white;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:15px;
 }
 
-/* IMAGE */
-.hero img {
-    width:100%;
-    border-radius:12px;
-    margin-top:20px;
-}
-
-/* SIDEBAR */
+/* BOX */
 .box {
     background:#122f4a;
     padding:20px;
-    border-radius:12px;
+    border-radius:10px;
     margin-bottom:20px;
-}
-
-.box h3 {
-    border-bottom:1px solid rgba(255,255,255,0.2);
-    padding-bottom:5px;
 }
 
 /* SECTIONS */
 section {
-    padding:60px;
+    padding:60px 40px;
 }
 
 /* SERVICES */
 .grid {
     display:flex;
+    gap:20px;
     justify-content:center;
-    gap:25px;
+    flex-wrap:wrap;
 }
 
 .card {
     background:white;
     padding:25px;
-    border-radius:12px;
-    width:280px;
+    width:260px;
+    border-radius:10px;
 }
 
 /* ABOUT */
 .about {
     background:white;
+    text-align:center;
 }
 
 /* FORM */
+form {
+    max-width:500px;
+    margin:auto;
+}
+
 input, textarea {
     width:100%;
-    padding:14px;
+    padding:12px;
     margin:10px 0;
     border:1px solid #ccc;
 }
@@ -130,9 +133,11 @@ button {
     background:#0d2b45;
     color:white;
     border:none;
+    font-size:16px;
+    border-radius:6px;
 }
 
-/* FLOATING WHATSAPP */
+/* FLOAT WHATSAPP */
 .float {
     position:fixed;
     bottom:20px;
@@ -141,7 +146,7 @@ button {
     color:white;
     padding:15px;
     border-radius:50%;
-    font-size:22px;
+    font-size:20px;
     text-decoration:none;
 }
 </style>
@@ -164,87 +169,82 @@ button {
 <section class="hero" id="home">
 
 <div class="left">
-<h1>RIOOL PROBLEMEN?<br><span class="orange">WIJ LOSSEN HET OP!</span></h1>
+    <h1>RIOOL PROBLEMEN?<br><span class="orange">WIJ LOSSEN HET OP!</span></h1>
 
-<p>Dé specialist in riool ontstoppen, herstellen en vernieuwen in Eemsdelta en omstreken.</p>
+    <p>Dé specialist in riool ontstoppen, herstellen en vernieuwen in Eemsdelta en omgeving.</p>
 
-<p>✔ Vakundig ✔ Eerlijk ✔ Snel ter plaatse</p>
+    <p>✔ Snel ✔ Betrouwbaar ✔ Vakwerk</p>
 
-<a class="btn whatsapp" href="https://wa.me/31681824786" target="_blank">
-💬 WhatsApp direct
-</a>
-
-<img src="https://media.discordapp.net/attachments/1470408805706895390/1496986313218588752/ChatGPT_Image_23_apr_2026_23_11_17.png?ex=69ebe0a5&is=69ea8f25&hm=ad63144c26e6203b689c12d36fc5c9162527669af025b3ae806edf248b2bc759&=&format=webp&quality=lossless&width=1326&height=884">
+    <a class="btn" href="https://wa.me/31681824786" target="_blank">
+        💬 WhatsApp direct
+    </a>
 </div>
 
 <div class="right">
+    <div class="box">
+        <h3>Diensten</h3>
+        <p>✔ Ontstoppen</p>
+        <p>✔ Herstellen</p>
+        <p>✔ Vernieuwen</p>
+    </div>
 
-<div class="box">
-<h3>Diensten</h3>
-<p>✔ Ontstoppen</p>
-<p>✔ Herstellen</p>
-<p>✔ Vernieuwen</p>
-</div>
-
-<div class="box">
-<h3>Waarom wij</h3>
-<p>✔ Snelle service</p>
-<p>✔ Eerlijke prijzen</p>
-<p>✔ Betrouwbaar</p>
-</div>
-
+    <div class="box">
+        <h3>Waarom wij</h3>
+        <p>✔ Snelle service</p>
+        <p>✔ Eerlijke prijzen</p>
+        <p>✔ Geen gedoe</p>
+    </div>
 </div>
 
 </section>
 
 <!-- DIENSTEN -->
 <section id="diensten">
-<h2 style="text-align:center;">Onze diensten</h2>
+<h2 style="text-align:center;">Diensten</h2>
 
 <div class="grid">
 <div class="card">
-<h3>Riool ontstoppen</h3>
-<p>Snelle oplossing bij verstoppingen.</p>
+<h3>Ontstoppen</h3>
+<p>Wij lossen elke verstopping snel op.</p>
 </div>
 
 <div class="card">
-<h3>Riool herstellen</h3>
-<p>Reparatie van schade en lekkages.</p>
+<h3>Herstellen</h3>
+<p>Reparatie van schade aan leidingen.</p>
 </div>
 
 <div class="card">
-<h3>Riool vernieuwen</h3>
-<p>Complete vervanging van leidingen.</p>
+<h3>Vernieuwen</h3>
+<p>Nieuwe leidingen professioneel geplaatst.</p>
 </div>
 </div>
 </section>
 
 <!-- OVER ONS -->
 <section class="about" id="over">
-<h2 style="text-align:center;">Over ons</h2>
-<p style="max-width:700px;margin:auto;text-align:center;">
-Eemsdelta Rioolservice is gespecialiseerd in het oplossen van rioolproblemen.
-Wij staan bekend om onze snelle service, duidelijke communicatie en eerlijke prijzen.
-Of het nu gaat om een verstopping of volledige vernieuwing, wij helpen u snel en vakkundig.
+<h2>Over ons</h2>
+<p style="max-width:700px;margin:auto;">
+Eemsdelta Rioolservice helpt particulieren en bedrijven met alle rioolproblemen.
+Snel, eerlijk en zonder verrassingen.
 </p>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-<h2 style="text-align:center;">Contact / Offerte</h2>
+<h2 style="text-align:center;">Offerte aanvragen</h2>
 
-<form action="https://formspree.io/f/xdkzylpw" method="POST" style="max-width:500px;margin:auto;">
-<input type="text" name="naam" placeholder="Uw naam" required>
-<input type="email" name="email" placeholder="Uw e-mail" required>
-<textarea name="bericht" placeholder="Uw probleem"></textarea>
+<form action="https://formspree.io/f/xdkzylpw" method="POST">
+<input type="text" name="naam" placeholder="Naam" required>
+<input type="email" name="email" placeholder="E-mail" required>
+<textarea name="bericht" placeholder="Beschrijving probleem"></textarea>
 
-<button type="submit">Verstuur</button>
+<button type="submit">Versturen</button>
 </form>
 </section>
 
 <!-- WHATSAPP FLOAT -->
 <a class="float" href="https://wa.me/31681824786" target="_blank">
-<i class="fa-brands fa-whatsapp"></i>
+💬
 </a>
 
 </body>
